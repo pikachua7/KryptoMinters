@@ -25,7 +25,7 @@ const getLibrary = (provider) => {
 function App() {
   //1. LivePeer
   const Livepeer = require("livepeer-nodejs");
-  const apiKey = "20d69c53-f581-4241-9598-3d2c22aef5a1";
+  const apiKey = process.env.LIVEPEER_API;
   console.log(apiKey);
   const livepeerObject = new Livepeer(apiKey);
   const [data, setData] = useState(null);
@@ -112,7 +112,7 @@ function App() {
 
     alert("Wait for Stream to get Minted!!");
 
-    const nftPortApiKey = "702a0efe-0092-4ee6-adee-f0e396774018";
+    const nftPortApiKey = process.env.NFT_PORT_API;
     console.log(nftPortApiKey);
 
     //Minting NFTs using NFTPort
@@ -139,7 +139,7 @@ function App() {
       url: 'https://api.nftport.xyz/v0/me/mints',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: '702a0efe-0092-4ee6-adee-f0e396774018'
+        Authorization: process.env.NFT_PORT_API
       }
     };
 
@@ -163,7 +163,7 @@ function App() {
       //--------------------------------------------------------------------
 
       // 3. NFTStorage
-      const client = new NFTStorage({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU2NGI0NjlFYTVlZTIxODNiNDQxNTUwMWRCQWYxNzBiQjdDYTkxOGMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY0Mzg5MjU0MjAxMiwibmFtZSI6IlJvYWRUb1dlYjMifQ.RX2pyQuez7jOnNLa0OZFUkGzT2iWqn8MIpQIiAiMIqI" });
+      const client = new NFTStorage({ token: process.env.NFT_STORAGE_TOKEN });
       const cid = await client.storeBlob(new Blob([{
         chain: res.data.chain,
         contract_address: res.data.contract_address,
@@ -175,7 +175,7 @@ function App() {
       //--------------------------------------------------------------------
 
       //4. Covalent
-      const covalent = "https://api.covalenthq.com/v1/1/address/" + address + "/transactions_v2/?quote-currency=USD&format=JSON&block-signed-at-asc=false&no-logs=false&key=" + "ckey_9330b642fdfb41c2ab4593fe705";
+      const covalent = "https://api.covalenthq.com/v1/1/address/" + address + "/transactions_v2/?quote-currency=USD&format=JSON&block-signed-at-asc=false&no-logs=false&key=" + process.env.COVALENT_API_CKEY;
       const covalentRes = await axios.get(covalent);
       setCovalentData(covalentRes.data.data);
       console.log(covalentRes.data.data);
