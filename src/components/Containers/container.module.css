@@ -1,0 +1,14 @@
+.contentStyle {
+    margin-top: 5rem;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+
+.walletWrapper {
+    width: 300px;
+    position: fixed;
+    right: 5rem;
+    top: 5rem;
+    background-color: aqua;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

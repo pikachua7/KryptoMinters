@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height:100vh;
+    width:100%;
+    background-size: 400% 400%;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #eeeb4a, #23d5ab);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+.stream-url-text-box {
+  width: 50%;
+  /* border-radius: 20px; */
+  border-style: solid;
+  border-color: rgb(235, 42, 8);
+  margin: 10px auto;
+}
+
+.video-container {
+  width: 65%;
+  height: 30%;
+  min-width: 650px;
+  min-height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-color: rgb(230, 10, 21);
+  border-style: solid;
+  /* border-radius: 20px; */
+  overflow: hidden;
+}
+
+/* button {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: steelblue;
+  background-color: steelblue;
+  color: white;
+  margin: 10px auto;
+} */
+
+/* button:hover {
+  background-color: #0074d9;
+  color: white;
+} */
+
+
