@@ -293,37 +293,37 @@ function App() {
                   </tr>
                   <tr>
                     <td>rinkeby</td>
-                    <td>0x17a1b12da6c23ee76daf263d20d2f8c9565cf3e8c025da206e19fa2ce61ebd1b</td>
+                    <td>{mintedNFT.transaction_hash[0]}</td>
                     <td>0xf18ee101d2081478ce68eab4e6b8f7cb0fbbed4e</td>
                     <td>'NFTPort.xyz'</td>
                   </tr>
                   <tr>
                     <td>rinkeby</td>
-                    <td>0x48e52279e2afa41eae4fd59b0d15536e9c8bfec8982d5fa15680ffd113d8cf97</td>
+                    <td>{mintedNFT.transaction_hash[1]}</td>
                     <td>0xf18ee101d2081478ce68eab4e6b8f7cb0fbbed4e</td>
                     <td>'NFTPort.xyz'</td>
                   </tr>
                   <tr>
                     <td>rinkeby</td>
-                    <td>0xf1872820e41bef49614eea929421ee4a56f37659a08fe0e390571955db4b745a</td>
+                    <td>{mintedNFT.transaction_hash[2]}</td>
                     <td>0xf18ee101d2081478ce68eab4e6b8f7cb0fbbed4e</td>
                     <td>'NFTPort.xyz'</td>
                   </tr>
                   <tr>
                     <td>rinkeby</td>
-                    <td>0xa6d36f8a960b1fbcce764a521a04b41be5424c06398411bdf4f2997d91fa9961</td>
+                    <td>{mintedNFT.transaction_hash[3]}</td>
                     <td>0xf18ee101d2081478ce68eab4e6b8f7cb0fbbed4e</td>
                     <td>'NFTPort.xyz'</td>
                   </tr>
                   <tr>
                     <td>rinkeby</td>
-                    <td>0xb254b79d13b2c271d1760451ab746e70b97b5322dc49cfbd1656c7e11c55e01c</td>
+                    <td>{mintedNFT.transaction_hash[4]}</td>
                     <td>0xf18ee101d2081478ce68eab4e6b8f7cb0fbbed4e</td>
                     <td>'NFTPort.xyz'</td>
                   </tr>
                   <tr>
                     <td>rinkeby</td>
-                    <td>0x02d52c0f78f3b99dbb8ac3ba69850dc61644fd7d91e3603635b4d1d72633ad85</td>
+                    <td>{mintedNFT.transaction_hash[5]}</td>
                     <td>0xf18ee101d2081478ce68eab4e6b8f7cb0fbbed4e</td>
                     <td>'NFTPort.xyz'</td>
                   </tr>
